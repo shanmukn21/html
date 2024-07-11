@@ -21,6 +21,7 @@
         }
 
         header {
+            min-height: 48px;
             padding: 8px;
             gap: 4px;
             display: flex;
@@ -64,15 +65,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
         #srchbar {
+            margin-bottom: 16px;
             padding-left: 8px;
-            margin-top: 50px;
-            max-width: 422px+87px+52px;
-            max-height: 42px;
-            border-radius: 42px;
+            max-width: 553px;
+            min-height: 44px;
+            max-height: 44px;
+            border-radius: 44px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -107,11 +108,20 @@
         #srchbar svg {
             padding: 8px;
         }
-
+#gglei{
+    margin-top: 100px;
+    margin-bottom: 38px;
+}
         input {
-            width: 422px;
+            width: 439px;
             min-height: 42px;
             font-size: 16px;
+            outline: 0px;
+            background-color: #ffffff;
+        }
+
+        input[type="text"]::-webkit-calendar-picker-indicator {
+            background-color: #ffffff;
         }
 
         #shortcuts {
@@ -159,15 +169,15 @@
         #customize {
             display: flex;
             flex-direction: row;
-            gap:8px;
+            gap: 8px;
             align-items: center;
             justify-content: center;
-            margin: 16px;
+            margin: 0px 16px 16px 0px;
             padding: 8px 16px;
             height: 16px;
             border-radius: 16px;
             background-color: #d3e3fd;
-            box-shadow:0 3px 6px rgba(0,0,0,.16),0 1px 2px rgba(0,0,0,.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
         }
 
         #pensil {
@@ -210,7 +220,7 @@
         </div>
     </header>
     <section>
-        <svg xmlns="http://www.w3.org/2000/svg" width="272" height="92">
+        <svg id="gglei" xmlns="http://www.w3.org/2000/svg" width="272" height="92">
             <path fill="#EA4335"
                 d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z" />
             <path fill="#FBBC05"
